@@ -1,5 +1,3 @@
-# download data from https://service.scedc.caltech.edu/webstp/, and put it in the same folder under the directory "data"
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
