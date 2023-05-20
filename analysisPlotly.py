@@ -53,17 +53,11 @@ for num in graphNums:
 
     fftDF = pd.DataFrame({"mags": mags1S, "freqs": freqs1S})
 
-    # plt.style.use(["dark_background"])
-    # plt.rcParams.update({"axes.grid": True,"grid.color": [0.25, 0.25, 0.25],"lines.linewidth": 0.75,"lines.markersize": 3,})
-
-    # df.plot(grid=True, title="Raw Seismograph Data", xlabel="Time ($t$) [$s$]",ylabel="Reading (x)", legend=[])
-    # fftDF.plot(grid=True,title="Fourier Transform",xlabel="Frequency ($f$) [$s^{-1}$]",ylabel="Magnitude ($|X|$)",legend=[])
-
     fig = make_subplots(
         rows=2,
         cols=1,
         subplot_titles=("Raw Seismograph Data", "Fourier Transform"),
-        vertical_spacing=0.1,
+        vertical_spacing=0.15,
     )
 
     fig.add_trace(
@@ -92,7 +86,12 @@ for num in graphNums:
         template="plotly_dark",
         #margin=dict(r=10, t=50, b=25, l=10),
         showlegend=False,
+        xaxis_title="Time (t) [sec]",
+        xaxis2_title="Frequency (f) [1/sec]",
+        yaxis_title="Measurement (x)",
+        yaxis2_title="Magnitude (|X|)"
     )
+     
     fig.show()
 
 plt.show()
