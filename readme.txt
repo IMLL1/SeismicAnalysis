@@ -1,1 +1,1 @@
-Download data from https://service.scedc.caltech.edu/webstp/, and put it in the same directory as the python code, under a folder called "data"
+Download data from https://service.scedc.caltech.edu/webstp/ (select ASCII as the format, select "triggered", and put in a single event ID. I've been testing w 38457511, which is the ridgecrest earthquake), and put it in the same directory as the python code, under a folder called "data". 
