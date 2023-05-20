@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-import random
 
 files = os.listdir("data")
 fileNames = np.char.strip(files, files[0][:9])
